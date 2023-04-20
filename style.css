@@ -29,25 +29,90 @@
         z-index: 10;
     }
     
-    nav ul {
+    nav {
         display: flex;
-        justify-content: flex-end;
-        padding: 1rem;
-    }
-    
-    nav ul li:not(:last-child) {
-        margin-right: 1rem;
-    }
-    
-    nav ul li a {
-        padding: 0.5rem;
-    }
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      nav li {
+        margin-right: 20px;
+      }
+      
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      nav a:hover {
+        color: #0088cc;
+      }
+      
+      .login a {
+        background-color: #333;
+        border: 2px solid #333;
+        border-radius: 4px;
+        color: #fff;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .login a:hover {
+        background-color: transparent;
+        color: #333;
+      }
+      
+      @media screen and (max-width: 768px) {
+        nav {
+          flex-wrap: wrap;
+        }
+      
+        .login {
+          margin-bottom: 20px;
+        }
+      
+        nav ul {
+          width: 100%;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      
+        nav li {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+
     
     main {
         margin: 2rem auto;
         max-width: 800px;
         padding: 0 1rem;
     }
+
+    .porto-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
     
     h1,
     h2,
@@ -99,6 +164,7 @@
         align-items: center;
         margin-bottom: 2rem;
         text-align: center;
+        margin-top: 2rem;
     }
     
     .about img {
@@ -209,29 +275,104 @@
     }
 
     #clock {
-        font-size: 48px;
-        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 1rem;
+    } 
+
+    #hour {
         color: #333;
-        background-color: #eee;
-        padding: 10px;
-        border-radius: 5px;
-        display: inline-block;
-      }
-      
-      #hours, #minutes, #seconds {
-        padding: 0 10px;
-        border-right: 2px solid #333;
-      }
-      
-      #hours {
-        color: #f00;
-      }
-      
-      #minutes {
-        color: #0f0;
-      }
-      
-      #seconds {
-        color: #00f;
-      }
+    }
+
+    #minute {
+        color: #ff1313;
+    }
+
+    #second {
+        color: #333;
+    }
+
+    .footer-text {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 1rem;
+        font-size: smaller;
+    }
+
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
+        text-align: center;
+        margin-top: 2rem;
+        text-size-adjust: 100%;
+    }
+
+    /* styling form comment */
+.comments {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .comments h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .comments label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .comments input,
+  .comments textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .comments textarea {
+    height: 150px;
+  }
+  
+  .comments button[type="submit"] {
+    background-color: #008cba;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* responsive styling */
+  @media screen and (max-width: 768px) {
+    .comments {
+      padding: 10px;
+      margin-top: 20px;
+    }
+  
+    .comments h2 {
+      font-size: 20px;
+    }
+  
+    .comments input,
+    .comments textarea {
+      padding: 8px;
+    }
+  
+    .comments textarea {
+      height: 100px;
+    }
+  
+    .comments button[type="submit"] {
+      padding: 8px 16px;
+    }
+  }
   

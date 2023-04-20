@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Login Form</h1>
+      <form action="login.php" method="POST">
+        <div class="form-control">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="usernameinput" required />
+        </div>
+        <div class="form-control">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="passwordinput" required />
+        </div>
+        <div class="form-control">
+          <input type="submit" value="Login" />
+        </div>
+      </form>
+    </div>
+  </body>
+   <!-- jangan lupa menambahkan script js sweet alert di bawah ini  -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+</html>
