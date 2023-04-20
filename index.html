@@ -12,15 +12,16 @@
     />
   </head>
   <body>
-    <header>
+    <header>  
       <nav>
-        <a href="#" class="logo">
-            <img src="https://i.pinimg.com/originals/2a/ff/5d/2aff5d3ae14a89142c768228c5c2d4ec.png" alt="logo" class="logo-img" />
-        </a>
+        <!-- button login -->
+        <div class="login">
+          <a href="login.html">Login</a>
+        </div>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="porto.html">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -31,55 +32,30 @@
         <p>Backend Developer</p>
         <a href="#contact">Contact Me</a>
       </section>
-      <section id="about" class="about">
-        <h2>About Me</h2>
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMVFRUXGBYWFRcXFxUVFRUVFRcWFxUVFRUYHSggGBolHRUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lHSUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMMA3AMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xAA7EAABAwIEBAQEBQIEBwAAAAABAAIDBBEFEiExBkFRYRMicZEygaGxB1JywfAjghRDYtEzQoOSotLh/8QAGgEAAgMBAQAAAAAAAAAAAAAAAQIAAwQFBv/EACQRAAICAQQCAgMBAAAAAAAAAAABAhEDEiExQQQTIlEFMmEj/9oADAMBAAIRAxEAPwDHxKVrVBA5HRDRar7D2N8JQTwo+MG65URJosnZnp41DlVlVR6oPw1qi0xnEh8NdECJhiurGlo8yvirAo2UjoVBIFqanDbC/wDPuqCrjsVXlSQXFogY5WNK64VUQb7FSRPffQLG5oBpIGXRHgqqpqwjdGx4gOir1JikdVDoVQ1bdVf1FUCFRVrxdCwoCITcinC45iYNkOVcATyoyoEdkTSE7MmkqECKRuq0lG3yrP0W4WjiNmo9CsDxIqie1WlbJc2Qxp7q6GNsgAWpuVESssoVJRoJbQyq1pZLrNRSHkVZ0lSqHwE0VOiHNVdSzqxjN1XqpkK6sp1USCxWmqYtFna9lvqrIZRrGRPsrShqw03WdEh9E5shWlZ9KIpGkxHE2kWCoJJBcqJ8iHce6yZc0pskpWEmRd8TuhQ5OL1VsKEeInB/coPMpCTZCwBPiKGVt1HmV3hPDs88b5o2FzWfFa1xcE3t8lLCUNrLrzojp6a+nNB5E6m0CgdLKtBgfDE1SbRt05uOgCdj3C09LrI27Ts4ahT2Kw0zOFi5lRDmpuVMpAJ6JW0kvlCpGmylNQVaiEw1creOAZVSQP1uraOo0sup48NSBZVV7bFVysq46qtVGdJSIhjXIiGVChSArnhL2intzWhopLrFU8tlf4ZVJXGyGq8C4VDjFE78pt6Gy0+H1YDL8ypf8ceyyvLpfBdHHas8veLFNut9ieGQzbtyO6t0ue4WTxPCHxG+7eRG3z6JllUiSxtFO8pl1NK1Q2RsroV10OXQxPDFCDU8XsnBqka1EFDYY+q9e4EmZFh8rDpJITZtjsWgNJ023XlLGLV4Rj8xysdK1jQAAS3MNLWuLFElGs4n4fgmAMQEbmR2d5HeZ4tYEWv11WLwThwzVGRwLQD5+RAv91raOGpebx1Mcg38tib6fEwgO5DkjMMw6VsrpHua4kWdluCLWNy2wshLgK5NLh1LHEwMY3K0bW/dDcRUrZoJI3a3abdiNQfdExv0UFQdVnbZeongU8NnEd1E5q0vGtAIqh2XZ3mH917/AFv7rOuC1Rdooapg7gmPUr1G5qviCiWFWDHKvhRQ2XU8WVCMhqigZN0dOEG5qr8jdhQO1OTWhOAXPSGJIyj6SS1kCxqPpYr2VkYNkNlTSf0men7lEwOUFKz+iztcH3UkWi5OZVNo24/1QaGXTJIjsdR03B+S5HNZGMeCqW6HoymK8Oh3mh35s/8AX/ZZmSAtNiLEddF6HVgg3Crq6Nkos8C/5h8XurIZa5Kp474MYGFPZGrhuC3dYHT6rTYTw2x1hkv3N7q1ZEV+tmIZCpWwL1yi4AhIBeCPQq0h/D+j3yuP9yfVZW40eKsg7Iynw+R3wscT2BJXulHwrSR/DC2/U+Y/VW8NMxos1rW+gA+yZMU8JpsDrBYtikHQ2IWgoa2uZYSRmQDbP8Q9Hg3C9VLB0VFj0ojbcMJPZI5MaKT2KyhrC/Qtcx3NrrfR+x+dvVSPdcnqNxzHqOnfZZybiAXsWEfP9kZBKHgPaSDycNCPmq5SvkuUa4M1+JFF8EturT9x+6wK9Ox2nm8CVrx4rHeZp2dGRzAHLsvM5BYlX4nsVTRBKownyJoC0xE6HRolhQwUzCuhgdCMdIEM5ineVFdHI9wFaCpGqMKeIarFFWMEwxK2w+PVC07FZ0bF1fExWwGgw83aWehC7M0hB0FTlkaTtcA/PdaXEcPuLjVcT8th9Wa+mbMLtFBdGUkqFdGRyU0Oi5LLw2obcKvZTXKsI5QdF0kBIQbS0gutLSVsNO27iFUUFO558oR54KfI7M99h0VuNCTaHTcauJ/ptFu+q1HD2ISTNu9pb003UOE8KwQgHLmPU6/RWlRWMiG40V6VGeTT2QZdBYhiPhjTVZfFeMg3QEBY/FOLs3O6Ll9EWP7NtU8XOabFo90G/jC+jmAhec1OP3Qxxvt9UjbLKiewU2H0tU3MWAHnbdFQcKxMFmOd89V5PhHFzojoSFvsE46Y+wdv1RVdiu+mXNVhZDS3cEELwfiCjdDM5hFiD9OS+iI6+ORuhBXnP4iYCJAZGDzt/wDJqsg0mJK2tzyqyaAnHRNBW6HRU+DjFM0qFhTwtcHQo9yhc1ERhPsjKiFK0Iqnah2hG0rVXjiAsacWVjT7IGAbI6PZd3w8dIFimetzwzXCeIBx1b5XfsV57VOR3C2LeDMMx8rvK79j8lzfy+JZI/1FuKdM9DrcIaQSFmKiE3t0WydWNy6ke/Xms1XAZrg3XlGjdFgULLapklTquzzABVAkzvS1YzdHpfCgFgfRax1U0DUrFYNJkjHoFJV15turYypFMo2y7xXHwwGx1XnXEPFJdcA6oLiTFz8PNY+ack73T8i7RC6muLjclCGVQGRRl6sSEsIdJ3UZlUBKV0aITCZTQVZabgoLMuFyDSCj0Hh/iVwt5lrG4oJWi+ui8Xp6ktPZa7B8RNhqqmqLFuVvFuG+FLdo8jtR26hUd1veJ4vFprjdvm+XNYJgXQ8ZuSM2RUxzE5cuurdVIqJ4U9MhUjgjLkJUMarGlYg42qypwrcMdwBcQRGZQRqRxXbw0oig1Ugw7miKlyEcVzvLdsaJooMWc+ENv5maHuOSdHiZA1Ko8Pks8DrofmpJ5LErzHlYlGZqxz2LCrr7o3AY7uuVmfEJK2GBxWAWWSpF0XZqPGAAsqjFcQDWkkqeol0WO4iqjeyVKxuCsr6svcSUE51k0vTSVeipoRKa5y49yansRIdnTSkkgNQkkklCCV3g0uypQ1WeF7hLLgKNxTeZhadQRY/NefubZxHQ29lvcN2WJq/+I+22Z33K1eA7kyrOD5SuWUtlxzF2UZiSFSqOFqPZBpslYSjhKs4BoqSCbVXNM+4T+NNSIGhMkckXaKJ7l1tVIUHqHIa6mnKgC52d2woex1iCjK+3xDY6oIItmrCOY1HouP5WO1qXRbjdEFOfMFtMHmFgFh49/mtjgLNAT0XKyGrGW05WP4giN7rZFqrMXos7dtUkWWvgwRCSsJqMglDPhV1ldMDcElM9iiLUyYrRxJKyVkQCTmBdDVI2NBsKRxourLDITcIeCG52Whw2nsq5SodRLWkdlbc8gSViHPu4nqSVqsZqMkLu/lHzWNL7Ld+PVW2Z8/NBKSjgfcqW67kZJozk1PurGF2m6qWO1RbH6KnI12Qy7SrOgm5Kv8EomlabrJgm4SsJeApkhR9JSktBUNXBlXceVOFg0sqpiowpjTlx0T5aYtWGb1WSiFqPw2Ave1o5kfVCQx3Wn4Po7z5js0E/M6D7rHn+ONseK3RWT4OWSWtpdaTDosoAVnWUgcSUyGnsuBKVm6MaOtCbKy4RACRS2NRm8Qob3IVLPS2WznjQFVSA620TWFGNlp0O+LstPPRdEDJSW5JlIDgUfhd0vC7q1MKXghHWT1sr44OyKip0SyNH01JzPsg5BUK5IaSkv/PsraOKy5HYJuJVXhROfz2Hqdkq+RJOkUHElXmflGzd+5Wee9Eulvck6lBuXXgtEEkc6Tt2F0z0UgKZWAYt2J3ERnG7qdNbGpREeiWf9IVzSEbBCN1TMfqrAVOiojuOqNhh1UwM1Oqz+JVgc7RVDqw9VAZbp5ZHVDa+jU4YGkXNlFizxsFT0taWjROfMXG6t9q0UgOWxb4fT5gmirfE8lji0g20U/D93ubG3cm3p1PshMUYfEfp/wAx+hWbycilFRIn9GrwriJjxleQHfQ/7K4BXmAdZXOE8QOj8rvM36hcrJh7Rox5umbZJCUleyQXY4HtzRZWZ7GgicN1AWqchDyu5IJkIpIQULJT9EbKoXORsNlcaZv5U007eiMeVASjZLIo4QFKCkpGxKcgsbG25Wf4nqbu8MHRu/6jvda2CHovPK5zs5LuZP3Wnx4qzPmdIGjbc2T3UxXYHC6OgPmC6cKZmQLDTkHUK9w+kzK6gwpr4gbaqtgcYZLHb+arVH/N0PooPZhYbqR73UIhHdTYhjDSzTdVEGIWGt/dU58lv4izSMfmTjKVDnTlk9jEHtcpFGxSsCdP7CPjCOp2E6BGYFgMk5GUG17Cwvc9l6LgfAjRYvuQN2sAO2+aQ+Vvyup7KIZ/hXC5zcQtJe7RxA+FvryW0PDdPDAY5GCoqH2OVu7T+obD7q9poGMAjYHED/Kg+H/qS8z7KeWTwW6vgpgf75PfTX3VLd7kPNH/AIb1bgXZA3mAXC9lj6/DJI3ljm2c3Q8/qF63X8QUP+ZPPN6GzfbRV0vF+HMHkow49XZfruUKCeWslcw3BIPbRXeH8UPbo/zDrsf/AKouJcQgmJdHTiEn8riW/wDaR9lnXlVzgmPGbR6TR4pFJ8Lteh0PsinsuvLGzEbFXGG8RyR6O8w6H9is8sH0aI5k+TayRod7FFSY5DIB5sp6HT6oouHX2VWllqkmClibkRTiFFZHSyWRBikYF0hCVOIRs+Jwv05qU+gNhNViLYW3O/IdVkKvI/xHuY65BLcuwdcb9rXXaqqM0l+Ww9F6rFw1G7DMsFvEfHmLxu/e7b9OS24oaUZMs9TPDWFTRy2TJ48riCmZlqiys0+FcQGMW5IfE8REhv8AwKhD13xFa5tqg6nQd4xSEg6INr1KHJAWVLd1KAuMbqnhqzoUc0LQ8I4R487GEEguA00+qoYRdesfhphRax0oHmcfCj/W/wCJ3ybdG9gmxw6iggYMjTZ5LWNHxS20sPysv77ruPYxDSsvO7xZTqIQbMZ2IGlh3RDqhjHSTaeFTR+Gw9X21t3vYLxDFMQdJI57nEkkkk67oENdiP4h1DvLGWxN5BgA+u6ylbikkhzOeXHqSSq103dNMqhAh0pUZl7qDMeqjJUohO94UUqjSdJdAJxyYXJ5K4G3QIcD0QyreNnEehQrm2XFKJYZ/jH/AJj7q+wLGmNZlkJvcm+/yWXDlayRRNp2nMDKTfTXK3ax+6DimNGbW5b1nEzNowSep0CzU1QXEuO51QxK61SMEmSWRyDqR+q9V4B4lblFNIba/wBM8ru3YexPPqvJYjbZH0dW5hzA2INwenO6cQufxK4ZfTzGVoJieS4HkCdS36rD3XrcXGDKmIw1IGotm3a79TeR/wBQ2Xk1Y2z3AciR7Ep4shy6bnTEk1gJWuUwehWFTNKiYQdTMCSSqIg3DGjxG+q954SYGww2FrQSyD9ZIGb1SSUIVXG8hbhsAabB5zO/1HU3PzXkkp0SSUIDri6kiwHEkkkoRkiYkkmRBBJJJREJCNFCkklIPI0TEklGQSkjSSURDVcP0Eb4JnObctaC03OhJ7FUNVv7pJIohAFWOOqSSLANJ1XUkkCHV3MkkniQ/9k=" alt="John Doe" />
-        <p>
-          Hi, my name is Aditya Eka Rahmadani and I'm a Backend Developer. I'm passionate about developing the server-side logic that powers web applications or software products. 
-          This would involve designing and implementing APIs, managing databases and data storage, ensuring system security and performance, and collaborating closely with other members of the development team . 
-          When I'm not coding, you can find me sleep, reading or practicing my homework.
-        </p>
-      </section>
-      <h2>Portfolio</h2>
-      <section id="portfolio" class="portfolio">
-        <a class="project-link" href="https://github.com/Aditya27T/grammmar-anti-jaksel-BE-JS"> 
-            <div class="project">
-              <img src="https://miro.medium.com/v2/resize:fit:811/1*fygqfizATFjt6ALek2W1jg.png" alt="Project 1" />
-              <h3>Project 1</h3>
-              <p>
-                LA project involving API development with Node.js and Sequelize would typically involve creating an API that interacts with a database using Sequelize, which is an ORM library for Node.js that allows developers to easily interact with relational databases. The API could be used for a variety of purposes, such as allowing users to create, read, update, and delete data stored in a database, or integrating with other applications or services. Overall, it would involve setting up a Node.js server, configuring Sequelize to interact with a database, defining API endpoints, and implementing the corresponding logic for those endpoints.
-              </p>
-            </div>
-        </a>
-        <a class="project-link" href="https://github.com/Aditya27T/Nodejs-BookshelfAPI">
-        <div class="project">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDnkXMx8mKx5LBH0ByX5wiNbzPVdNkv0nOA&usqp=CAU" alt="Project 3" />
-          <h3>Project 2</h3>
-          <p>
-            A project involving API development with Node.js, Express, and MongoDB would typically involve creating an API that interacts with a MongoDB database using the Mongoose library. The API could be used for a variety of purposes, such as allowing users to create, read, update, and delete data stored in a database, or integrating with other applications or services. Overall, it would involve setting up a Node.js server, configuring Express to handle API requests, connecting to a MongoDB database using Mongoose, defining API endpoints, and implementing the corresponding logic for those endpoints.
-          </p>
-        </div>
-        </a>
-        <a class="project-link" href="https://github.com/Aditya27T/zeamart--inventory-c-.git">
-            <div class="project">
-              <img src="https://www.codeguru.com/wp-content/uploads/2021/08/C-Sharp-Tutorials.png" alt="Project 3" />
-              <h3>Project 3</h3>
-              <p>
-                A project involving inventory management using C# and MySQL would typically involve creating a desktop application that allows users to manage their inventory. The application would use C# as the programming language and interact with a MySQL database to store and retrieve inventory data. It could include features such as adding, editing, and deleting items, tracking inventory levels, generating reports, and setting alerts for low inventory levels. Overall, the project would involve designing a user-friendly interface using C#, setting up a MySQL database to store inventory data, and implementing the necessary logic to ensure data is properly managed and displayed to the user.
-              </p>
-            </div>
-            </a>
-      </section>
 
       <div class="content-section" id="contact">
-        <h2>Contact Me</h2>
+        <h2>My Socmed</h2>
         <div class="profile-pics">
           <a href="https://www.instagram.com/rahmadan_2912/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROX1kmXLq1c4s5p4NYz6eFqAg9P3MO3o1dSwy2zY4dcA&s" alt="Instagram"></a>
           <a href="https://www.linkedin.com/in/adit-eka-309549179//" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC" alt="LinkedIn"></a>
           <a href="https://github.com/Aditya27T/" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"></a>
         </div>
       </div>
+      <section id="comments" class="comments">
+        <h2>Leave a comment</h2>
+        <form action="submit_comment.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
       
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" required></textarea>
+      
+          <button type="submit">Submit</button>
+        </form>
+      </section>      
     </main>
     <footer>
         <script src="./script.js"></script>
@@ -88,7 +64,7 @@
             <span id="minutes"></span> :
             <span id="seconds"></span>
           </div>
-      <p>&copy; 2023 Aditya Eka Rahmadani</p>
+      <p class="footer-text">© 2021 Aditya Eka Rahmadani</p>
     </footer>
   </body>
 </html
